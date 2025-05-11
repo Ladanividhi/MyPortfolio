@@ -8,14 +8,14 @@ You can view the live project here: [🌐 Visit Portfolio](https://ladanividhi.o
 ---
 
 ## 📁 Project Structure
+```
 portfolio/
 ├── index.html        # Main HTML file (Landing page + other sections)
 ├── profile.jpg       # Profile image
 ├── style.css         # Stylesheet for website styling
 ├── script.js         # JavaScript for interactivity
 └── README.md         # Project documentation
-
-
+```
 ---
 
 ## 🎨 Features
