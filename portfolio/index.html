@@ -10,12 +10,20 @@
 <body>
   <nav class="navbar">
     <div class="logo">Vidhi Ladani</div>
+
+    <!-- Hamburger icon -->
     <button id="menu-toggle" aria-label="Open navigation menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <i class="fas fa-bars"></i>
     </button>
+
+    <!-- Overlay for mobile -->
+    <div class="nav-overlay"></div>
+
+    <!-- Slide-out nav menu -->
     <ul class="nav-links" id="nav-links">
+      <!-- ❌ Close icon inside mobile menu -->
+      <span class="nav-close"><i class="fas fa-times"></i></span>
+
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#achievements">Achievements</a></li>
@@ -56,7 +64,7 @@
     <div class="about-grid">
       <div class="about-left">
         <p class="about-text">
-            I am a B.Tech student in Computer Engineering, currently in my 4th semester at Dharmsinh Desai University with a strong academic record, scoring a CPI of 9.57 in my 3rd semester. I have a deep interest in web development, app development, and coding. I enjoy building user-friendly applications, solving complex problems, and continuously exploring new technologies. My goal is to grow as a full-stack developer and create impactful software solutions.
+            I am a B.Tech student in Computer Engineering, currently in my 5th semester at Dharmsinh Desai University with a strong academic record, scoring a CPI of 9.13 in my 4th semester. I have a deep interest in web development, app development, and coding. I enjoy building user-friendly applications, solving complex problems, and continuously exploring new technologies. My goal is to grow as a full-stack developer and create impactful software solutions.
         </p>
           
         <div class="coding-card">
@@ -80,7 +88,7 @@
           <div>
             <div class="edu-title">B.Tech. in Computer Engineering</div>
             <div class="edu-school">Dharmisinh Desai University - Nadiad</div>
-            <div class="edu-details">CPI: 9.57/10 | 2023 — 2027</div>
+            <div class="edu-details">CPI: 9.13/10 | 2023 — 2027</div>
           </div>
         </div>
         <div class="edu-card">
@@ -114,6 +122,15 @@
           View Certificate <i class="fas fa-external-link-alt"></i>
         </a>
       </div>
+      <div class="achievement-card">
+        <i class="fas fa-award"></i>
+        <h3>Holboxathon 2025 </h3><br>
+        <p>Participated in Holboxathon 2025 as part of a team of 4 members, where we developed <strong>Salonova - Talk2Book</strong>, an AI-powered voice-based salon appointment booking system which enable users to schedule and manage appointments through conversational interactions.</p>
+        <a href="https://drive.google.com/file/d/1tCaafqi9RxQRhZDsGmRCp59C7FAxh8Pi/view?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">
+          View Certificate <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
       <div class="achievement-card">
         <i class="fas fa-trophy"></i>
         <h3>DUHacks 4.0 - Hackathon 2025</h3><br>
@@ -152,29 +169,15 @@
 
   <section id="experience" class="experience">
     <h2>Work Experience</h2>
-    <!-- <div class="experience-card">
-      <div class="exp-header">
-        <span class="exp-role">Management Associate</span><br>
-        <span class="exp-company">Computer Society of India</span><br>
-      </div>
-      <ul>
-        <li> Explored and learned various technical and non-technical aspects of event management</li>
-        <li> Enhanced curiosity and problem-solving through hands-on project involvement</li>
-        <li> Took charge of task coordination and internal communications</li>
-        <li> Successfully managed and organized multiple chapter events</li>
-        <li> Built confidence by taking on new challenges and responsibilities</li>
-        <li> Collaborated with a dynamic and diverse team of peers</li>
-      </ul>
-    </div> -->
   <div class="timeline">
 
     <div class="timeline-item">
-      <div class="timeline-date">May 2025 - June 2025</div>
-      <h3 class="timeline-title">Software Developer Intern at StaxTech</h3>
-      <p class="timeline-description">
-        Selected for a 1-month batch-based internship at StaxTech. Tasked with developing and submitting two beginner-level projects using programming languages of my choice. This opportunity helps in building technical skills and opens doors to future full-time roles based on performance.
-      </p>
-    </div>
+  <div class="timeline-date">May 2025 - June 2025</div>
+  <h3 class="timeline-title">Flutter Development Intern at UpTech Mind</h3>
+  <p class="timeline-description">
+    Completed one month, full-time internship at UpTech Mind, focused on designing, developing, and maintaining cross-platform mobile applications using Flutter and Dart. Gained hands-on experience in building responsive UIs and integrating APIs. This role helped strengthen my mobile app development skills.
+  </p>
+</div>
 
     <div class="timeline-item">
       <div class="timeline-date">Jan 2025 - Present</div>
@@ -198,6 +201,20 @@
     <h2>Projects</h2>    
     <div class="projects-grid">
       <div class="project-card">
+        <h3>SmartSpend - Expense Manager App</h3>
+        <p>A cross-platform mobile application built with Flutter and Firebase that helps users efficiently track, manage, and analyze their personal expenses. Features include expense categorization, transaction history, real-time updates, interactive charts, and a clean, intuitive UI for a seamless user experience.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Firebase Firestore</span>
+          <span class="tech-tag">Dart</span>
+          <span class="tech-tag">Mobile App</span>
+        </div>
+        <a href="https://github.com/Ladanividhi/SmartSpend" class="view-code-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> View Code
+        </a>
+      </div>
+
+      <div class="project-card">
         <h3>Misspelling Correction - BhashaTHON Project</h3>
         <p>A Python-based hybrid spell correction tool that detects and corrects misspelled or grammatically incorrect English sentences. Built using RapidFuzz and LanguageTool, the project uses string similarity and grammar rules to ensure accurate results. Developed for BhashaTHON 2025, where it secured 1st place.</p>
         <div class="tech-stack">
@@ -210,6 +227,19 @@
           <i class="fab fa-github"></i> View Code
         </a>
       </div>   
+
+      <div class="project-card">
+        <h3>eFinance - Transaction Management App</h3>
+        <p>A modern expense and transaction management application built using Flutter and Sqflite for efficient local data storage. The app enables users to record, edit, and review financial transactions with features like categorized records, search functionality, transaction summaries, and interactive reports. Designed with a clean and intuitive UI for an effortless offline and local experience.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Sqflite</span>
+          <span class="tech-tag">Dart</span>
+        </div>
+        <a href="https://github.com/Ladanividhi/eFinance" class="view-code-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> View Code
+        </a>
+      </div>
 
       <div class="project-card">
         <h3>Online Examination System</h3>
@@ -309,6 +339,7 @@
           <li>Java</li>
           <li>JavaScript</li>
           <li>PHP</li>
+          <li>Dart</li>
         </ul>
       </div>
       <div class="skill-card">
@@ -316,6 +347,7 @@
         <ul class="skill-list-bullet">
           <li>Spring Boot</li>
           <li>Django</li>
+          <li>Flutter</li>
         </ul>
       </div>
       <div class="skill-card">
